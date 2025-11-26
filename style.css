@@ -1,0 +1,206 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+body {
+  background: #f6f6f6;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  padding: 10px 20px;
+  align-items: center;
+}
+
+.logo {
+  width: 120px;
+  height: 100px;
+  display: block;
+}
+
+/* ☰ */
+.menu-icon {
+  font-size: 32px;
+  cursor: pointer;
+  user-select: none;
+}
+
+.menu-lateral {
+  position: fixed;
+  top: 0;
+  right: -200px;
+  width: 200px;
+  height: 100vh;
+  background: #0b2147;
+  padding-top: 80px;
+  transition: right 0.35s ease;
+}
+
+.menu-lateral ul {
+  list-style: none;
+}
+
+.menu-lateral ul li {
+  margin: 20px 0;
+}
+
+.menu-lateral ul li a {
+  color: #fff;
+  font-size: 18px;
+  padding: 10px 20px;
+  display: block;
+  text-decoration: none;
+}
+
+.menu-lateral.ativo {
+  right: 0;
+}
+
+.fundo-menu {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.4);
+  opacity: 0;
+  pointer-events: none;
+  transition: 0.3s ease;
+}
+
+.fundo-menu.ativo {
+  opacity: 1;
+  pointer-events: all;
+}
+
+.destaque {
+  background: #c9e7f6;
+  padding: 40px 20px;
+  text-align: left;
+}
+
+.destaque h2 {
+  font-size: 28px;
+  color: #0b2147;
+  font-weight: 600;
+}
+
+.destaque h2 strong {
+  font-size: 30px;
+}
+
+.destaque .descricao {
+  margin-top: 10px;
+  font-size: 15px;
+  color: #1a1a1a;
+}
+
+.botoes {
+  margin-top: 25px;
+  display: flex;
+  gap: 15px;
+}
+
+.botoes img {
+  width: 15px;
+  height: 15px;
+}
+
+.google,
+.apple {
+  padding: 12px 20px;
+  border-radius: 8px;
+  font-weight: 600;
+  cursor: pointer;
+  font-size: 14px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  text-decoration: none;
+}
+
+.google {
+  background: #2e3c56;
+  color: #fff;
+}
+
+.google:hover{
+    background: #2c63ca;
+}
+
+.apple {
+  background: #99cfac;
+  color: #000;
+}
+
+.apple:hover{
+    background: #8efd98;
+}
+
+.func {
+  background: #0b2147;
+  padding: 40px 20px;
+  color: #fff;
+  text-align: center;
+}
+
+.func h2 {
+  font-size: 24px;
+  margin-bottom: 20px;
+}
+
+.cards {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.card {
+  background: #eafcff;
+  color: #000;
+  border-radius: 12px;
+  padding: 20px;
+  text-align: left;
+  box-shadow: 5px -6px 0px 0px #c9e7f6;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card:hover{
+    border: 2px solid #5daad1;
+    transform: translatex(5px);
+    
+}
+
+.card .icon {
+  width: 45px;
+  margin-bottom: 10px;
+}
+
+.card h3 {
+  font-size: 18px;
+  font-weight: 600;
+  color: #0b2147;
+  margin-bottom: 5px;
+}
+
+.card p {
+  font-size: 14px;
+  color: #333;
+}
+
+/* RESPONSIVO */
+@media (min-width: 768px) {
+  .cards {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  .card {
+    width: 30%;
+  }
+}
