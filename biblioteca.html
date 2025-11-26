@@ -4,16 +4,27 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Vitally</title>
+
     <link rel="stylesheet" href="style.css" />
+
     <link
       href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap"
       rel="stylesheet"
     />
   </head>
+
   <body>
     <header class="header">
       <img src="img/logo vitally.png" alt="Vitally" class="logo" />
 
+      <nav class="menu-desktop">
+        <a href="index.html">Início</a>
+        <a href="biblioteca.html">Biblioteca</a>
+        <a href="agendamento.html">Agendamento</a>
+        <a href="#contato" class="btn-baixar">Baixe o App</a>
+      </nav>
+
+      <!-- ÍCONE MOBILE -->
       <div id="menuBtn" class="menu-icon">☰</div>
     </header>
 
@@ -28,10 +39,16 @@
     </nav>
 
     <section class="destaque">
-      <h2><strong>Biblioteca <br> de Medicamentos </strong></h2>
+      <h2>
+        <strong
+          >Biblioteca <br />
+          de Medicamentos</strong
+        >
+      </h2>
+
       <p class="descricao">
-        Cuide da sua saúde sem preocupações.
-        Entenda para que serve, os efeitos colaterais e o intervalo de tampo de cada medicamento.
+        Cuide da sua saúde sem preocupações. Entenda para que serve, os efeitos
+        colaterais e o intervalo de tempo de cada medicamento.
       </p>
 
       <div class="botoes">
@@ -43,6 +60,7 @@
           <img src="img/google-play.png" alt="logo" />
           Google Play
         </a>
+
         <a
           href="https://www.apple.com/br/app-store/"
           target="_blank"
@@ -55,13 +73,13 @@
     </section>
 
     <section class="func">
-
       <div class="cards">
         <div class="card">
           <img src="img/comprimidos.png" class="icon" />
           <h3>1. Entenda Para que Serve</h3>
           <p>
-            Pesquise os medicamentos de seu interesse para descobrir sua funcionalidade
+            Pesquise os medicamentos de seu interesse para descobrir sua
+            funcionalidade.
           </p>
         </div>
 
@@ -69,16 +87,53 @@
           <img src="img/comprimido.png" class="icon" />
           <h3>2. Saiba o Horário de Tomar</h3>
           <p>
-            O horário de consumo do seu medicamento importa e, com o Vitally, você tem esse acesso!
+            O horário de consumo do seu medicamento importa e, com o Vitally,
+            você tem esse acesso!
           </p>
         </div>
 
         <div class="card">
           <img src="img/comprimidos (1).png" class="icon" />
-          <h3>3. Efeitos Colaterias</h3>
+          <h3>3. Efeitos Colaterais</h3>
           <p>
-            Visualize os efeitos colaterais para garantir que não atrapalhará o seu dia.  
+            Visualize os efeitos colaterais para garantir que não atrapalhará o
+            seu dia.
           </p>
+        </div>
+      </div>
+    </section>
+
+    <section class="extra">
+      <div class="extra-container">
+        <h2 class="extra-titulo">Sua Saúde Não Depende de Nenhuma Conexão.</h2>
+        <p class="extra-subtitulo">
+          Acesse e registre seus dados de saúde a qualquer hora, em qualquer
+          lugar. Seus registros são seus, sem depender de sinal instável.
+        </p>
+
+        <div class="extra-cards">
+          <div class="extra-card">
+            <img src="img/sem-sinal.png" alt="Ícone" class="extra-icon" />
+            <p class="extra-card-text">Acesso 100% Offline</p>
+          </div>
+
+          <div class="extra-card">
+            <img
+              src="img/design-responsivo.png"
+              alt="Ícone"
+              class="extra-icon"
+            />
+            <p class="extra-card-text">Design Intuitivo e Simples</p>
+          </div>
+
+          <div class="extra-card">
+            <img
+              src="img/computacao-em-nuvem.png"
+              alt="Ícone"
+              class="extra-icon"
+            />
+            <p class="extra-card-text">Seus Dados, Sua Privacidade</p>
+          </div>
         </div>
       </div>
     </section>
